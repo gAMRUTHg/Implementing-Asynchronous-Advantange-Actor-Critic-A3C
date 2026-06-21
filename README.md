@@ -79,10 +79,3 @@ Training ran about 12,000 episodes total (4 workers x 3000 each). Left plot is r
 The agent learns pretty fast at first and crosses the solved line a few times. But it is not stable — reward drops back down a few times before going up again. This is a common problem with A3C, since the workers can pull the shared network in different directions, and there is no entropy bonus here to keep the policy exploring.)
 
 The agent learns pretty fast at first and crosses the solved line a few times. But it is not stable — reward drops back down a few times before going up again. This is a common problem with A3C, since the workers can pull the shared network in different directions, and there is no entropy bonus here to keep the policy exploring.
-
-## Things I want to try next
-
-- Add an entropy bonus so the policy does not get too sure of itself too early
-- Add gradient clipping
-- Try a smaller learning rate or a learning rate schedule
-- Save the best model instead of just the last one
